@@ -128,60 +128,62 @@
         <h2 class="teal-text text-darken-2"><span style="background-color: #cfd8dc">לוקיישנים</span></h2>
       </div>
 
-      <div class="row">
-        <div class="col s12 m4" data-aos="fade-up">
-          <h5 class="center-align">מתחם בריכות - זמן כרמל</h5>
-          <div class="card hoverable">
-            <div class="card-image">
-              <a href="./pages/zman-carmel.html">
-                <img src="./img/locations/carmel-time/2017-06-28 TAJ MAAHAL 0080.jpg">
-              </a>
-            </div>
-            <div class="card-content">
-              <p>מתחם בריכות גדול ומאובזר המעניק שלל רחב של אפשרויות באיזור ייחודי המשקיף על הכרמל<br>
-                מתאים לימי כיף
-                וגיבושים עד 500 אנשים </p>
-            </div>
-            <div class="card-action blue-grey center">
-              <a href="./pages/zman-carmel.html" class="white-text"><i class="fas fa-info-circle"></i>פרטים נוספים</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m4" data-aos="fade-up">
-          <h5 class="center-align">הר יללת התנים</h5>
-          <div class="card hoverable">
-            <div class="card-image">
-              <a href="./pages/yelalat-tanim.html">
-                <img src="./img/locations/tans-cry/5.jpeg">
-              </a>
-            </div>
-            <div class="card-content">
-              <p>חווה אקולוגית מרהיבה בה תעברו סיורים מלמדים ומעשירים החווה מתאימה לסיורים וימי כיף וגיבוש.<br>
-                החל מ-20
-                אנשים ועד ל-100 אנשים</p>
-            </div>
-            <div class="card-action blue-grey center">
-              <a href="./pages/yelalat-tanim.html" class="white-text"><i class="fas fa-info-circle"></i>פרטים נוספים</a>
+      <div class="responsive-container">
+        <div class="row">
+          <div class="col s12 m4" data-aos="fade-up">
+            <h5 class="center-align">מתחם בריכות - זמן כרמל</h5>
+            <div class="card hoverable">
+              <div class="card-image">
+                <a href="./pages/zman-carmel.html">
+                  <img src="./img/locations/carmel-time/2017-06-28 TAJ MAAHAL 0080.jpg">
+                </a>
+              </div>
+              <div class="card-content">
+                <p>מתחם בריכות גדול ומאובזר המעניק שלל רחב של אפשרויות באיזור ייחודי המשקיף על הכרמל<br>
+                  מתאים לימי כיף
+                  וגיבושים עד 500 אנשים </p>
+              </div>
+              <div class="card-action blue-grey center">
+                <a href="./pages/zman-carmel.html" class="white-text"><i class="fas fa-info-circle"></i>פרטים נוספים</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col s12 m4" data-aos="fade-up">
-          <h5 class="center-align">בקצה המים</h5>
-          <div class="card hoverable">
-            <div class="card-image">
-              <a href="./pages/kze-maim.html">
-                <img src="./img/locations/end-water/3.jpg">
-              </a>
+          <div class="col s12 m4" data-aos="fade-up">
+            <h5 class="center-align">הר יללת התנים</h5>
+            <div class="card hoverable">
+              <div class="card-image">
+                <a href="./pages/yelalat-tanim.html">
+                  <img src="./img/locations/tans-cry/5.jpeg">
+                </a>
+              </div>
+              <div class="card-content">
+                <p>חווה אקולוגית מרהיבה בה תעברו סיורים מלמדים ומעשירים החווה מתאימה לסיורים וימי כיף וגיבוש.<br>
+                  החל מ-20
+                  אנשים ועד ל-100 אנשים</p>
+              </div>
+              <div class="card-action blue-grey center">
+                <a href="./pages/yelalat-tanim.html" class="white-text"><i class="fas fa-info-circle"></i>פרטים נוספים</a>
+              </div>
             </div>
-            <div class="card-content">
-              <p>הפקה בין מים לשמים – מתחם אירועים על קצה המים המאפשר הקמה בכל חוף שתרצו.<br>
-                אירועים בבנייה אישית – מתאים החל מ-30 אנשים
-              </p>
-            </div>
-            <div class="card-action blue-grey center">
-              <a href="./pages/kze-maim.html" class="white-text"><i class="fas fa-info-circle"></i>פרטים נוספים</a>
+          </div>
+
+          <div class="col s12 m4" data-aos="fade-up">
+            <h5 class="center-align">בקצה המים</h5>
+            <div class="card hoverable">
+              <div class="card-image">
+                <a href="./pages/kze-maim.html">
+                  <img src="./img/locations/end-water/3.jpg">
+                </a>
+              </div>
+              <div class="card-content">
+                <p>הפקה בין מים לשמים – מתחם אירועים על קצה המים המאפשר הקמה בכל חוף שתרצו.<br>
+                  אירועים בבנייה אישית – מתאים החל מ-30 אנשים
+                </p>
+              </div>
+              <div class="card-action blue-grey center">
+                <a href="./pages/kze-maim.html" class="white-text"><i class="fas fa-info-circle"></i>פרטים נוספים</a>
+              </div>
             </div>
           </div>
         </div>
@@ -288,6 +290,10 @@
       AOS.init({
         duration: 800,
       });
+
+      if ($(window).width() > 1400) {
+        $('.responsive-container').addClass('container');
+      }
     });
 
 
