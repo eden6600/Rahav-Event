@@ -94,7 +94,11 @@ h2 span {
 
 /* LOCATIONS */
 .card-image img {
-  height: 300px;
+  height: 350px;
+}
+
+.card-content h4 {
+  margin: 30px;
 }
 
 .card-action a {
@@ -133,6 +137,10 @@ h2 span {
 .bar-section .btn-large:hover {
   color: white;
   background-color: #009688;
+}
+
+.card.horizontal img{
+  width: 500px !important;
 }
 
 /* FOOTER */
