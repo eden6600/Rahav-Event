@@ -128,7 +128,7 @@
         <h2 class="teal-text text-darken-2"><span style="background-color: #cfd8dc">לוקיישנים</span></h2>
       </div>
 
-      <div class="responsive-container">
+      <div class="responsive-container container">
         <div class="row">
           <div class="col s12 m4" data-aos="fade-up">
             <h5 class="center-align">מתחם בריכות - זמן כרמל</h5>
@@ -281,18 +281,15 @@
       $('.owl-carousel').owlCarousel({
         loop: true,
         nav: true,
-        margin: 20,
         items: 1,
       });
 
       $('.scrollspy').scrollSpy();
 
-      AOS.init({
-        duration: 800,
-      });
+      AOS.init();
 
-      if ($(window).width() > 1400) {
-        $('.responsive-container').addClass('container');
+      if ($(window).width() < 1400) {
+        $('.responsive-container').removeClass('container');
       }
     });
 

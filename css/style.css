@@ -173,33 +173,7 @@ blockquote {
   margin-top: 37px;
 }
 
-/* .locations-carousel {
-  width: 80% !important;
-  height: 100px !important;
-  float: left;
-}
-
-.locations-carousel .carousel-item {
-  background-size: cover;
-  background-position: center;
-}
-
-.tans-location #carousel-item-1 {
-  background-image: url('../img/locations/tans-cry/1.jpeg');
-}
-.tans-location #carousel-item-1 {
-  background-image: url('../img/locations/tans-cry/2.jpeg');
-}
-.tans-location #carousel-item-1 {
-  background-image: url('../img/locations/tans-cry/3.jpeg');
-}
-.tans-location #carousel-item-1 {
-  background-image: url('../img/locations/tans-cry/4.jpeg');
-}
-.tans-location #carousel-item-1 {
-  background-image: url('../img/locations/tans-cry/5.jpeg');
-}
- */
-
-@media screen and (max-width: 1400px) {
+.owl-carousel img {
+  height: 450px;
+  width: 600px;
 }
