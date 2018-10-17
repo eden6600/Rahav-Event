@@ -53,6 +53,15 @@ h2 span {
   margin-left: auto;
 }
 
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block i {
+  margin-left: 10px;
+}
+
 /* HEADER */
 .main-heading {
   border-bottom: 0;
@@ -94,7 +103,7 @@ h2 span {
 
 /* LOCATIONS */
 .card-image img {
-  height: 350px;
+  height: 300px;
 }
 
 .card-content h4 {
@@ -139,7 +148,7 @@ h2 span {
   background-color: #009688;
 }
 
-.card.horizontal img{
+.card.horizontal img {
   width: 500px !important;
 }
 
