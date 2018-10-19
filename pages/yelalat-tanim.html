@@ -18,24 +18,40 @@
 </head>
 
 <body class="animated fadeIn">
-  <header>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper teal">
-          <div class="container">
-            <a href="#" class="brand-logo">Rahav Events</a>
-            <ul class="hide-on-med-and-down">
-              <li><a href="../index.html#home"><i class="fas fa-home"></i></a></li>
-              <li><a href="../index.html#contact">צור קשר</a></li>
-              <li><a href="../index.html#bar">בר</a></li>
-              <li><a href="../index.html#locations">לוקיישנים</a></li>
-              <li><a href="../index.html#intro">אודות</a></li>
-            </ul>
-          </div>
+    <header>
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper teal">
+              <div class="container">
+                  <a href="../index.html" class="brand-logo"><img src="../img/logo.png"alt="" style="height: 160px; width: 160px; position: relative; bottom: 55px;"> </a>
+                  <a href="#" data-target="nav-mobile" class="sidenav-trigger hide-on-large-only right">
+                      <i class="fas fa-bars"></i>
+                    </a>
+                <ul class="hide-on-med-and-down">
+                  <li><a href="../index.html#home"><i class="fas fa-home"></i></a></li>
+                  <li><a href="../index.html#contact">צור קשר</a></li>
+                  <li><a href="../index.html#bar">בר</a></li>
+                  <li><a href="../index.html#locations">לוקיישנים</a></li>
+                  <li><a href="../index.html#intro">אודות</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-  </header>
+    
+        <ul id="nav-mobile" class="sidenav">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="" style="height: 160px; width: 160px; position: relative; right: 25px;">
+            </a>
+            <li>
+              <div class="divider center"></div>
+            </li>
+            <li><a href="../index.html#intro"><i class="far fa-id-card right"></i>אודות</a></li>
+            <li><a href="../index.html#locations"><i class="fas fa-landmark right"></i>לוקיישנים</a></li>
+            <li><a href="../index.html#bar"><i class="fas fa-wine-glass-alt right"></i>בר</a></li>
+            <li><a href="../index.html#contact"><i class="far fa-envelope right"></i>צור קשר</a></li>
+          </ul>
+      </header>
 
   <main>
     <div class="container">
@@ -78,19 +94,20 @@
   </main>
 
   <footer class="teal white-text" dir="ltr">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m8">
-          <h5>Rahav Events</h5>
-        </div>
-        <div class="col s112 m4">
-          <a href="https://www.facebook.com/rahavganach" class="white-text"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fas fa-at fa-2x"></i>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8">
+            <h5>Rahav Event</h5>
+          </div>
+          <div class="col s112 m4">
+            <a target="_blank" href="https://www.facebook.com/rahavganach" class="white-text"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ganachrahav/" class="white-text"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="mailto:info@rahav-event.co.il" target="_top" class="white-text"><i class="fas fa-at fa-2x" style="border-right: 1px solid white; padding-right: 10px;"></i></a>
+            <i class="fas fa-phone fa-2x"></i><span style="font-size: 1.4em; margin-left: 10px">052-645-2707</span>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   <script src="../js/jquery-3.3.1.min.js"></script>
   <script src="../owl/owl.carousel.min.js"></script>
@@ -98,6 +115,9 @@
   <script>
 
     $(document).ready(function () {
+      $('.sidenav').sidenav({
+        edge: 'right'
+      });
       $('.owl-carousel').owlCarousel({
         animateOut: 'zoomOut',
         animateIn: 'zoomIn',
