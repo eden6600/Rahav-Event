@@ -36,7 +36,7 @@ h2 span {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-center {
@@ -75,29 +75,26 @@ h2 span {
 .carousel-item {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-carousel #carousel-item-1 {
-  background-image: url('../img/parallax2.jpg');
-}
-.header-carousel #carousel-item-2 {
   background-image: url('../img/welcome/welcome-1.jpg');
 }
-.header-carousel #carousel-item-3 {
+.header-carousel #carousel-item-2 {
   background-image: url('../img/welcome/welcome-2.jpg');
 }
-.header-carousel #carousel-item-4 {
+.header-carousel #carousel-item-3 {
   background-image: url('../img/welcome/welcome-3.jpg');
 }
-.header-carousel #carousel-item-5 {
+.header-carousel #carousel-item-4 {
   background-image: url('../img/welcome/welcome-4.jpg');
 }
-.header-carousel #carousel-item-6 {
+.header-carousel #carousel-item-5 {
   background-image: url('../img/welcome/welcome-5.jpg');
 }
-.header-carousel #carousel-item-7 {
+.header-carousel #carousel-item-6 {
   background-image: url('../img/welcome/welcome-6.jpg');
-  background-position-y: -450px;
 }
 
 .carousel img {
@@ -213,6 +210,41 @@ blockquote {
   margin: 10px;
 }
 
+#about-img {
+  height: 450px; 
+  width: 450px;
+}
+
 .contact-col span {
   font-size: 1.4em
+}
+
+@media only screen and (max-width: 1200px) {
+  #down-icon {
+    margin-bottom: 50px;
+  }
+
+  .carousel img {
+    position: relative;
+    top: 0;
+    height: 350px;
+    width: 350px;
+  }
+
+  .card-content h4 {
+    margin: 0;
+  }
+
+  #about-img {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  .small-heading {
+    font-size: 24px;
+  }
 }

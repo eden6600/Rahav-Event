@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="../owl/owl.carousel.min.css">
-  <link rel="stylesheet" href="../owl/owl.theme.default.css">
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <link rel="stylesheet" href="../css/materialize.min.css">
@@ -63,12 +62,21 @@
             <div><img src="../img/bar/coffee time/espresso-1.jpg" alt=""></div>
             <div><img src="../img/bar/coffee time/espresso-2.jpg" alt=""></div>
             <div><img src="../img/bar/coffee time/espresso-3.jpg" alt=""></div>
+            <div><img src="../img/bar/coffee time/espresso-4.jpg" alt=""></div>
+            <div><img src="../img/bar/coffee time/espresso-5.jpg" alt=""></div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col s12 m6 right">
+        <div class="col s12 m6">
+          <blockquote>קפה הוא ללא ספק אחד המשקאות האהובים והפופולריים ביותר בקרב רבים בכל העולם ובכל זמן.<br><br>
+            מסיבה זו הופך בר הקפה
+            שלנו לפיתרון נוח ואיכותי בכל סוגי האירועים ולחלק בלתי נפרד מחווית האורחים והמשתתפים באירוע.
+          </blockquote>
+        </div>
+        
+        <div class="col s12 m6">
           <h5>תפריט אספרסו</h5>
           <div class="card-panel">
             <ul class="collection" style="border: 0">
@@ -81,12 +89,6 @@
               <li class="collection-item">חליטות תה מגוונות - מנטה, חמוציות, פירות יער, קנמון, רימונים, ורד הבר ועוד</li>
             </ul>
           </div>
-        </div>
-        <div class="col s12 m6">
-          <blockquote>קפה הוא ללא ספק אחד המשקאות האהובים והפופולריים ביותר בקרב רבים בכל העולם ובכל זמן.<br><br>
-            מסיבה זו הופך בר הקפה
-            שלנו לפיתרון נוח ואיכותי בכל סוגי האירועים ולחלק בלתי נפרד מחווית האורחים והמשתתפים באירוע.
-          </blockquote>
         </div>
 
       </div>
@@ -117,7 +119,7 @@
     </footer>
 
   <script src="../js/jquery-3.3.1.min.js"></script>
-  <script src="../owl/owl.carousel.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
   <script src="../js/materialize.min.js"></script>
   <script>
 
@@ -125,14 +127,13 @@
       $('.sidenav').sidenav({
         edge: 'right'
       });
-      $('.collapsible').collapsible();
       $('.owl-carousel').owlCarousel({
         animateOut: 'zoomOut',
         animateIn: 'zoomIn',
         autoplayHoverPause: true,
         autoplay: true,
         loop: true,
-        nav: true,
+        nav: false,
         items: 1,
       });
     });
